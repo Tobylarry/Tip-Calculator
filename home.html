@@ -13,7 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
-
+    <script src="tipcalc.js" async defer></script>
 </head>
 
 <body>
@@ -22,30 +22,22 @@
         <div class="wrapper">
             <div class="left">
                 <div class="bill">
-                    <label for="bil">Bill <br> <input class="input1" type="text" placeholder="0" style="text-align:right;" id="payment"></label>
+                    <label for="bil" class="bil">Bill <br> <input class="input1" type="text" placeholder="0" style="text-align:right;" id="payment" ></label>
                 </div>
                 <div class="tipP">
                     <h1>Select Tip %</h1>
                     <div class="selectBox">
-                        <div id="five" class="five">5%</div>
-                        <div id="ten" class="ten ">10%</div>
-                        <div id="fift" lass="fift ">15%</div>
+                        <div id="five" class="five tip" data-value="5">5%</div>
+                        <div id="ten" class="ten tip" data-value="10">10%</div>
+                        <div id="fift" class="fift tip" data-value="15">15%</div>
                     </div>
                     <div class="selectBox2 ">
-                        <div id="tf" class="tf ">25%</div>
-                        <div id="fifty" class=" fifty ">50%</div>
-                        <div id="custom" class=" custom ">Custom</div>
-                        <div class="container">
-                            <div id="mo" class="modal">
-                                <div id="close">X</div> <br><br>
-                                <label for="customInp">Input Tip <input type="text" id="customInp" placeholder= "0"style="text-align:right;border-radius:5px;height:30px;color: color: #6D7E7D;"></label> <br><br>
-                                <button ID="Submit">Submit</button>
-
-                            </div>
-                        </div>
+                        <div id="tf" class="tf tip" data-value="25">25%</div>
+                        <div id="fifty" class="fifty tip" data-value="50">50%</div>
+                        <input type="number" class="custom" id="custom" placeholder="custom">
                     </div>
                     <div class="people">
-                        <label for="people ">Number of People <br><input class="input1 " type="text "placeholder="0 " style="text-align:right; "id="people" ></label>
+                        <label for="people" class="bil">Number of People <br><input class="input1 " type="text "placeholder="0 " style="text-align:right; "id="people" ></label>
                     </div>
                 </div>
             </div>
